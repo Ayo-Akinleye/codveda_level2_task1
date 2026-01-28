@@ -3,10 +3,15 @@ import { Outlet } from "react-router-dom"
 
 const Layout = () => {
     return (
-        <>
+        <div className="h-screen flex flex-col">
+
             <Header />
-            <Outlet />
-        </>
+
+            <main className="flex-1 h-[calc(100vh-4rem)]">
+                <Outlet />
+            </main>
+
+        </div>
     )
 }
 

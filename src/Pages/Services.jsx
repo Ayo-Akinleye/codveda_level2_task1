@@ -5,7 +5,7 @@ import RenovationImg from '../assets/renovation construction.jpg';
 
 const Services = () => {
   return (
-    <div>
+    <section>
       <div className="px-20 py-2">
         <h1 className="font-bold text-3xl text-center py-3">OUR SERVICES</h1>
         <div className="grid md:grid-cols-3 gap-8">
@@ -31,7 +31,7 @@ const Services = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 
