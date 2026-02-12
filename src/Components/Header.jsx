@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from "../assets/logo for paragon.webp"
 
 const Header = () => {
+    const linkClasses = "py-1 px-2 hover:bg-white hover:text-orange-400 hover:rounded-lg";
+
     return (
         <div>
             <header className='flex items-center justify-between p-2 bg-orange-300 h-16'>
@@ -9,13 +11,64 @@ const Header = () => {
                     <img src={logo} alt="Logo for Paragon" className='h-12 w-auto' />
                     <h2 className='font-semibold font-serif text-lg'>PARAGON CONSTRUCTIONS</h2>
                 </div>
-                <nav className=''>
-                    <ul className='flex gap-6 text-white p-2'>
-                        <Link to="/">HOME</Link>
-                        <Link to="services">SERVICES</Link>
-                        <Link to="about">ABOUT</Link>
-                        <Link to="projects">PROJECTS</Link>
-                        <Link to="contact">CONTACT</Link>
+                <nav>
+                    <ul className='flex gap-4 text-black font-semibold items-center justify-center'>
+                        {/* HOME */}
+                        <li className={linkClasses}>
+                            <NavLink to="/"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? `${linkClasses} bg-white text-orange-400 rounded-lg`
+                                        : linkClasses
+                                }>HOME
+                            </NavLink>
+                        </li>
+
+                        {/* SERVICES */}
+                        <li className={linkClasses}>
+                            <NavLink to="services"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? `${linkClasses} bg-white text-orange-400 rounded-lg`
+                                        : linkClasses
+                                }>SERVICES
+                            </NavLink>
+                        </li>
+
+                        {/* ABOUT */}
+                        <li className={linkClasses}>
+                            <NavLink to="about"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? `${linkClasses} bg-white text-orange-400 rounded-lg`
+                                        : linkClasses
+                                }>
+                                ABOUT
+                            </NavLink>
+                        </li>
+
+                        {/* PROJECTS */}
+                        <li className={linkClasses}>
+                            <NavLink to="projects"
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? `${linkClasses} bg-white text-orange-400 rounded-lg`
+                                        : linkClasses
+                                }>
+                                PROJECTS
+                            </NavLink>
+                        </li>
+
+                        {/* CONTACT */}
+                        <li className={linkClasses}>
+                            <NavLink to="contact" className={({ isActive }) =>
+                                isActive
+                                    ? `${linkClasses} bg-white text-orange-400 rounded-lg`
+                                    : linkClasses
+                            }>
+                                CONTACT
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
             </header>

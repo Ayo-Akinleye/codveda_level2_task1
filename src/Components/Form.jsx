@@ -17,7 +17,7 @@ const Form = () => {
             <Input type="text" label="Message: " className='h-30' />
 
             <Button
-                text="Submit"
+                text="Submit" className='ml-77'
             />
         </form>
     )
