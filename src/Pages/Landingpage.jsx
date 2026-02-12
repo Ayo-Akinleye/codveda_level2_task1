@@ -1,19 +1,19 @@
 import HeroImg from "../assets/bg-img.webp"
-import { Helmet } from 'react-helmet'
+// import { Helmet } from 'react-helmet'
 
 const Landingpage = () => {
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <link rel="preload" as="image" href={HeroImg} fetchpriority="high" />
-            </Helmet>
+            </Helmet> */}
 
             <section
                 className="h-full flex font-sans justify-center items-center"
                 style={{ position: 'relative' }}
             >
                 <img
-                    src={HeroImg}
+                    src="/public/bg-img.webp"
                     alt="Hero Image"
                     fetchPriority="high"
                     width="1200"
