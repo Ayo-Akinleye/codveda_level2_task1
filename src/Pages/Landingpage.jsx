@@ -1,4 +1,4 @@
-import HeroImg from "../assets/bg-img.webp"
+// import HeroImg from "../assets/bg-img.webp"
 // import { Helmet } from 'react-helmet'
 
 const Landingpage = () => {
