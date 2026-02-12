@@ -13,7 +13,7 @@ const Landingpage = () => {
                 style={{ position: 'relative' }}
             >
                 <img
-                    src="/public/bg-img.webp"
+                    src="/bg-img.webp"
                     alt="Hero Image"
                     fetchPriority="high"
                     width="1200"
