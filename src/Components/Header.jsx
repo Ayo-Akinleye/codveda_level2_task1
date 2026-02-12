@@ -14,7 +14,7 @@ const Header = () => {
                 <nav>
                     <ul className='flex gap-4 text-black font-semibold items-center justify-center'>
                         {/* HOME */}
-                        <li className={linkClasses}>
+                        <li>
                             <NavLink to="/"
                                 className={({ isActive }) =>
                                     isActive
@@ -25,7 +25,7 @@ const Header = () => {
                         </li>
 
                         {/* SERVICES */}
-                        <li className={linkClasses}>
+                        <li>
                             <NavLink to="services"
                                 className={({ isActive }) =>
                                     isActive
@@ -36,7 +36,7 @@ const Header = () => {
                         </li>
 
                         {/* ABOUT */}
-                        <li className={linkClasses}>
+                        <li>
                             <NavLink to="about"
                                 className={({ isActive }) =>
                                     isActive
@@ -48,7 +48,7 @@ const Header = () => {
                         </li>
 
                         {/* PROJECTS */}
-                        <li className={linkClasses}>
+                        <li>
                             <NavLink to="projects"
                                 className={({ isActive }) =>
                                     isActive
@@ -60,7 +60,7 @@ const Header = () => {
                         </li>
 
                         {/* CONTACT */}
-                        <li className={linkClasses}>
+                        <li>
                             <NavLink to="contact" className={({ isActive }) =>
                                 isActive
                                     ? `${linkClasses} bg-white text-orange-400 rounded-lg`
