@@ -1,7 +1,7 @@
 import ServiceCard from "../Components/ServiceCard";
-import ResidentialImg from "../assets/residential image.jpg";
-import CommercialImg from "../assets/Commercial construction.jpg";
-import RenovationImg from '../assets/renovation construction.jpg';
+import ResidentialImg from "../assets/residential image.webp";
+import CommercialImg from "../assets/Commercial construction.webp";
+import RenovationImg from '../assets/renovation construction.webp';
 
 const Services = () => {
   return (

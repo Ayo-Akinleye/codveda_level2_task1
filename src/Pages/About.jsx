@@ -1,4 +1,4 @@
-import AboutImg from '../assets/about img.jpg';
+import AboutImg from '../assets/about img.webp';
 
 const About = () => {
     return (
@@ -42,6 +42,7 @@ const About = () => {
                 <div className='w-full'>
                     <img
                         src={AboutImg}
+                        loading="lazy"
                         alt="Paragon construction image"
                         className='w-full object-cover'
                     />

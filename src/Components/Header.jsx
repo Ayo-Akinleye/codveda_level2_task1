@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import logo from "../assets/logo for paragon.png"
+import logo from "../assets/logo for paragon.webp"
 
 const Header = () => {
     return (
         <div>
             <header className='flex items-center justify-between p-2 bg-orange-300 h-16'>
                 <div className='flex items-center'>
-                    <img src={logo} alt="Logo for Paragon" className='h-12 w-auto' />
+                    <img src={logo} alt="Logo for Paragon" loading="lazy" className='h-12 w-auto' />
                     <h2 className='font-semibold font-serif text-lg'>PARAGON CONSTRUCTIONS</h2>
                 </div>
                 <nav className=''>

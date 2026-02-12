@@ -1,4 +1,4 @@
-import HeroImg from "../assets/bg-img.jpg"
+import HeroImg from "../assets/bg-img.webp"
 
 const Landingpage = () => {
     return (
@@ -7,7 +7,7 @@ const Landingpage = () => {
             style={{ backgroundImage: `url(${HeroImg})` }}
         >
             <h2
-                className="text-orange-300 text-7xl text-center font-semibold max-w-4xl"
+                className="text-orange-300 text-7xl text-center font-bold max-w-4xl"
             >
                 BUILDING TRUSTED CONSTRUCTION AND INFRASTRUCTURE SOLUTIONS</h2>
         </section>
