@@ -3,9 +3,17 @@ import HeroImg from "../assets/bg-img.webp"
 const Landingpage = () => {
     return (
         <section
-            className="h-full flex font-sans bg-cover bg-center bg-no-repeat justify-center items-center"
-            style={{ backgroundImage: `url(${HeroImg})` }}
+            className="h-full flex font-sans justify-center items-center"
+            style={{ position: 'relative' }}
         >
+            <img
+                src={HeroImg}
+                alt="Hero Image"
+                fetchPriority="high"
+                width="1200"
+                height="800"
+                className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+            />
             <h2
                 className="text-orange-300 text-7xl text-center font-bold max-w-4xl"
             >
